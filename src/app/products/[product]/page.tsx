@@ -13,9 +13,9 @@ export default async function Prodects({
 
   return (
     <section className="text-gray-600 body-font overflow-hidden bg-gray-50">
-      <div className="container px-5 py-16 mx-auto">
+      <div data-aos="fade-up" data-aos-duration="1500" className="container px-5 py-16 mx-auto ">
         <div className="lg:w-4/5 mx-auto flex flex-wrap bg-white shadow-md rounded-lg overflow-hidden">
-          <div className="lg:w-1/2 w-full p-5">
+          <div  className="lg:w-1/2 w-full p-5">
             <Image
               alt={res.title}
               className="w-full h-auto object-cover object-center rounded-md"
@@ -45,7 +45,7 @@ export default async function Prodects({
               </div>
               <div className="mb-4">
                 <h3 className="text-sm text-gray-600 mb-2">Available Sizes</h3>
-                <div className="flex gap-2">
+                <div data-aos="zoom-out" data-aos-duration="1500" className="flex gap-2">
                   <span className="px-4 py-2 border rounded-md text-sm cursor-pointer hover:bg-indigo-100">
                     Small
                   </span>
@@ -66,12 +66,10 @@ export default async function Prodects({
                 </div>
               </div>
             </div>
-            <div className="mt-6 flex gap-4">
-              <button className="w-full text-indigo-600 border border-indigo-500 py-2 px-6 rounded-md hover:bg-indigo-50 transition">
-                <Link href="/cart">Add to Cart</Link>
-              </button>
-              <button className="w-full text-indigo-600 border border-indigo-500 py-2 px-6 rounded-md hover:bg-indigo-50 transition">
-                Add to Wishlist
+            <div data-aos="fade-up" data-aos-duration="1500"  className="mt-2 flex gap-4">
+              <button data-aos="fade-up" data-aos-duration="1500" className="text-white w-[50%] bg-indigo-500 hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+                  >
+                <Link href="/">Buy Now</Link>
               </button>
             </div>
           </div>
